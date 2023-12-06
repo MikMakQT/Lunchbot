@@ -25,6 +25,13 @@ example. SLACK_TOKEN = xoxb-**********
 
 ## Scraping
 
-This script works best if website has the lunch menu inside div and 
+
+
+### Changing the URl
 Put websites URL you wanna scrape the information inside the ''\
-example. html_text = requests.get('https://www.lounaat.info/lounas/cafe-hullu-orava/lappeenranta').text
+example. html_text = requests.get('https://www.lounaat.info/lounas/pancho-villa/lappeenranta').text
+
+### Changing the parameters for the searched elements
+Websites are constructed different ways, using different class names and elements.\
+You can modify searched elements in method find_all()\
+example. datas = soup.find_all('div', class_="item")
