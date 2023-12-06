@@ -1,16 +1,16 @@
 # Lunchbot\
 LounasBotti\
 
-## This project is to web scrape and extract lunch menu information from restaurant websites and process it. /n After processing data is converted to PDF-file, which is then send using Slack API to desired Slack channel. Recipients can vote interactively which restaurant to go using buttons\
+This project is to web scrape and extract lunch menu information from restaurant websites and process it. /n After processing data is converted to PDF-file, which is then send using Slack API to desired Slack channel. Recipients can vote interactively which restaurant to go using buttons\
 
-## install\
+## install
 Python Download:\
 https://www.python.org/downloads/
 
 Dependencies are installed using requirements.txt:\
 pip install -r requirements.txt
 
-## File modifications\
+## File modifications
 Go to https://api.slack.com/apps and create App.\
 After you created App, you should be in the App settings, go to OAuth & Permissions using the left menu.\
 Look for => >OAuth Tokens for Your Workspace.
