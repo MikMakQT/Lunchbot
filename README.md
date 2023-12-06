@@ -19,7 +19,7 @@ Look for => OAuth Tokens for Your Workspace.\
 Copy your => Bot User OAuth Token.
 
 Inside code editor head over .env file\
-Copy paste your OAuth Token\
+Paste your OAuth Token\
 example. SLACK_TOKEN = xoxb-**********
 
 ## Changing Scraping URL
