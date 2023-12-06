@@ -1,8 +1,9 @@
 # Lunchbot
 LounasBotti
 
-This project is to web scrape and extract lunch menu information from restaurant websites and process it.\
-After processing data is converted to PDF, which is then send using Slack API to desired Slack channel. Recipients can vote interactively which restaurant to go using buttons\
+This projects goal is to web scrape restaurants menus in the Lappeenranta area.\
+After scraping html code, desired data is searched and parsed.\
+Processed data is converted to PDF, which is then send using Slack API to desired Slack channel. Recipients can vote interactively which restaurant to go using buttons\
 
 ## Install
 Python Download:\
@@ -22,6 +23,8 @@ Inside code editor head over .env file\
 Paste your OAuth Token\
 example. SLACK_TOKEN = xoxb-**********
 
-## Changing Scraping URL
+## Scraping
+
+This script works best if website has the lunch menu inside div and 
 Put websites URL you wanna scrape the information inside the ''\
 example. html_text = requests.get('https://www.lounaat.info/lounas/cafe-hullu-orava/lappeenranta').text
