@@ -7,7 +7,7 @@ LounasBotti\
 Python Download:\
 https://www.python.org/downloads/
 
-Dependencies are installed using requirements.txt:
+Dependencies are installed using requirements.txt:\
 pip install -r requirements.txt
 
 #File modifications\
