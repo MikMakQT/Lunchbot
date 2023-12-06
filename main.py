@@ -1,17 +1,15 @@
 import slack
+from slack_sdk import WebClient
+from bs4 import BeautifulSoup 
+
 import os
 from pathlib import Path
 from dotenv import load_dotenv
-from bs4 import BeautifulSoup
+
+from fpdf import FPDF
 import requests
 import time
-import smtplib
-import datetime
-import time
-import re
 from datetime import date
-from datetime import datetime
-from itertools import islice
 
 env_path = Path('.') /'.env'
 load_dotenv(dotenv_path=env_path)
