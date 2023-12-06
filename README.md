@@ -21,5 +21,5 @@ Copy paste your OAuth Token\
 example. SLACK_TOKEN = xoxb-**********\
 
 
-Put websites URL you wanna scrape the information inside the ''\
+Put websites URL you wanna scrape the information inside the ''
 example. html_text = requests.get('https://www.lounaat.info/lounas/cafe-hullu-orava/lappeenranta').text
