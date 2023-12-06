@@ -3,7 +3,7 @@ LounasBotti
 
 This project is to web scrape and extract lunch menu information from restaurant websites and process it. /n After processing data is converted to PDF-file, which is then send using Slack API to desired Slack channel. Recipients can vote interactively which restaurant to go using buttons\
 
-## install
+## Install
 Python Download:\
 https://www.python.org/downloads/
 
