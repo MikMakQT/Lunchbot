@@ -18,7 +18,7 @@ Copy your => >Bot User OAuth Token.
 
 Inside code editor head over .env file\
 Copy paste your OAuth Token\
-example. SLACK_TOKEN = xoxb-**********
+example. SLACK_TOKEN = xoxb-**********\
 
 
 Put websites URL you wanna scrape the information inside the ''\
