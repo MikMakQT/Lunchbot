@@ -14,11 +14,11 @@ pip install -r requirements.txt
 Go to https://api.slack.com/apps and create App.\
 After you created App, you should be in the App settings, go to OAuth & Permissions using the left menu.\
 Look for => >OAuth Tokens for Your Workspace. \
-Copy your => >Bot User OAuth Token.\
+Copy your => >Bot User OAuth Token.
 
 Inside code editor head over .env file\
 Copy paste your OAuth Token\
-example. SLACK_TOKEN = xoxb-**********\
+example. SLACK_TOKEN = xoxb-**********
 
 
 ##Put websites URL you wanna scrape the information inside the ''\
