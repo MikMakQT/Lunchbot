@@ -23,4 +23,4 @@ example. SLACK_TOKEN = xoxb-**********
 
 ## Changing Scraping URL
 Put websites URL you wanna scrape the information inside the ''\
-example. html_text = 'requests.get'('https://www.lounaat.info/lounas/cafe-hullu-orava/lappeenranta').text
+example. html_text = requests.get('https://www.lounaat.info/lounas/cafe-hullu-orava/lappeenranta').text
