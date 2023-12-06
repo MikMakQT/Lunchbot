@@ -2,7 +2,7 @@
 LounasBotti
 
 This projects goal is to web scrape restaurants menus in the Lappeenranta area.\
-After scraping html code, desired data is searched and parsed.\
+After scraping HTML, desired data is searched and parsed.\
 Processed data is converted to PDF, which is then send using Slack API to desired Slack channel. Recipients can vote interactively which restaurant to go using buttons\
 
 ## Install
