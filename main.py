@@ -14,8 +14,8 @@ from datetime import date
 env_path = Path('.') /'.env'
 load_dotenv(dotenv_path=env_path)
 
-#SLACKTOKEN
-client = slack.WebClient(token=os.environ['SLACK_TOKEN'])
+
+client = WebClient(token=os.environ['SLACK_TOKEN'])
 
 
 
