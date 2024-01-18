@@ -36,3 +36,17 @@ example. html_text = requests.get('https://www.lounaat.info/lounas/pancho-villa/
 Websites are constructed different ways, using different class names and elements.\
 You can modify searched elements in method find_all()\
 example. datas = soup.find_all('div', class_="item")
+
+## Errors
+#1 C++ Error
+If you get error like this when installing packages: 
+error: Microsoft Visual C++ 14.0 or greater is required. Get it with "Microsoft C++ Build Tools": https://visualstudio.microsoft.com/visual-cpp-build-tools/
+      [end of output]
+
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for multidict
+Failed to build multidict
+ERROR: Could not build wheels for multidict, which is required to install pyproject.toml-based projects
+To fix this you can use pip install --upgrade setuptools in terminal
+If that doesnt work you need to install C++ downloading it from Microsoft website https://learn.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022
+or using Visual Studio installer and select C++ package to install
