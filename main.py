@@ -7,8 +7,8 @@ from dotenv import load_dotenv
 
 import requests
 
-import * from aika
-import * from ruokapaikat
+from aika import *
+from ruokapaikat import *
 
 env_path = Path('.') /'.env'
 load_dotenv(dotenv_path=env_path)
