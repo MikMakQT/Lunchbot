@@ -11,6 +11,8 @@ import requests
 import time
 from datetime import date
 
+import * from ruokapaikat
+
 env_path = Path('.') /'.env'
 load_dotenv(dotenv_path=env_path)
 
