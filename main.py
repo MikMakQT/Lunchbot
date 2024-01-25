@@ -6,9 +6,8 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 import requests
-import time
-from datetime import date
 
+import * from aika
 import * from ruokapaikat
 
 env_path = Path('.') /'.env'
