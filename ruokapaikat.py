@@ -47,7 +47,7 @@ def find_ruoka4():
     #SIVULLE TEHTIIN JOTAIN XD
     soup = BeautifulSoup(html_text,'lxml')
     #LÖYDETÄÄN KAIKKI LI, MENU-LIST_ITEM, koska sieltä löytyy ruokalistan sisältö
-    datas4 = soup.find_all('li', class_="menu-list__item")
+    datas4 = soup.find_all('div', class_="item")
     return datas4
 
 def find_ruoka5():
