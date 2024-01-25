@@ -23,9 +23,6 @@ def find_ruoka1():
     datas1 = soup.find_all('div', class_="item")
     return datas1
     
-    
-    
-
 def find_ruoka2():
     #RUOKALISTA SIVUN KOKO HTML TEKSTI
     html_text = requests.get('https://www.lounaat.info/lounas/pancho-villa/lappeenranta').text
