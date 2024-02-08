@@ -39,7 +39,7 @@ Websites are constructed different ways, using different class names and element
 You can modify searched elements in method find_all()\
 example. datas = soup.find_all('div', class_="item")
 
-##Timing
+## Timing
 
 ### Where to find / principle
 
