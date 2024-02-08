@@ -13,7 +13,7 @@ https://www.python.org/downloads/
 Dependencies are installed using requirements.txt:\
 pip install -r requirements.txt
 
-## File modifications
+## File modifications (.env)
 Go to https://api.slack.com/apps and create App.\
 After you created App, you should be in the App settings, go to OAuth & Permissions using the left menu:
 
@@ -24,7 +24,7 @@ Inside code editor head over .env file\
 Paste your OAuth Token\
 example. SLACK_TOKEN = xoxb-**********
 
-## Scraping
+## Scraping (ruokapaikat.py)
 
 ### Where to find / principle
 The scraping happens in the ruokapaikat.py file where the script uses the URL of the website as shown in the first example below. Then the script searches the classes and elements using given parameters.
@@ -39,7 +39,7 @@ Websites are constructed different ways, using different class names and element
 You can modify searched elements in method find_all()\
 example. datas = soup.find_all('div', class_="item")
 
-## Timing
+## Time (aika.py)
 
 ### Where to find / principle
 
