@@ -28,7 +28,7 @@ example. SLACK_TOKEN = xoxb-**********
 
 ### Where to find / principle
 The scraping happens in the ruokapaikat.py file where the script uses the URL of the website as shown in the example below to find the correct page.
-Then the script searches the classes and elements using given parameters, in example shown below the script searches classes named "item" and within these classes scrapes elements given the "div" parameter.
+Then the script searches the classes and elements using given parameters, in example as shown below the script searches classes named "item" and within these classes scrapes elements given the "div" parameter.
 
 ### Changing the URL
 Put websites URL you wanna scrape the information inside the ''\
