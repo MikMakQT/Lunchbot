@@ -26,8 +26,8 @@ example. SLACK_TOKEN = xoxb-**********
 
 ## Scraping (ruokapaikat.py)
 
-### Where to find / principle
-The scraping happens in the ruokapaikat.py file where the script uses the URL of the website as shown in the first example below. Then the script searches the classes and elements using given parameters.
+### Principle
+The script uses the URL of the website as shown in the first example below to scrape the website. Then the script searches the classes and elements using given parameters.
 The parameters given differ page to page. Therefore parameters that work for "lounaat.info" might not work for another page. 
 
 ### Changing the URL
@@ -41,7 +41,7 @@ example. datas = soup.find_all('div', class_="item")
 
 ## Time (aika.py)
 
-### Where to find / principle
+### Principle
 
 
 ## Errors
