@@ -24,14 +24,14 @@ def find_ruoka():
        
     for data in datas:
         data = data.text
-        #JOS TÄMÄ PÄIVÄMÄÄRÄ LÖYTYY RUOKALISTALTA, ruokalista tulostuu slackkiin
+        #If today's date is found on the menu, the menu will be printed to Slack
         if aika() in data:
             print(data, end='')
             kaava = data
             client.chat_postMessage(channel='#lunch-bot', text = (f'Tänään ruokana:\n {kaava}'))
             break
         else:
-            #VIIKONLOPPU TAI EI RUOKAILUA
+            #Weekend or no meals
             print("ei ruokailua")
         
 

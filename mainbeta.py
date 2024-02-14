@@ -69,7 +69,7 @@ def ruokanaTänään():
     
     for data in datas1:
         data = data.text
-        #JOS TÄMÄ PÄIVÄMÄÄRÄ LÖYTYY RUOKALISTALTA, ruokalista tulostuu slackkiin
+        #If today's date is found on the menu, the menu will be printed to Slack
         if aika() in data:
         
             pattern2 = data
@@ -95,12 +95,12 @@ def ruokanaTänään():
         
         
         else:
-            #VIIKONLOPPU TAI EI RUOKAILUA
+            #Weekend or no meals
             print("ei ruokailua")
 
     for data in datas2:
         data = data.text
-        #JOS TÄMÄ PÄIVÄMÄÄRÄ LÖYTYY RUOKALISTALTA, ruokalista tulostuu slackkiin
+        #If today's date is found on the menu, the menu will be printed to Slack
         if aika() in data:
         
             pattern2 = data
@@ -126,11 +126,11 @@ def ruokanaTänään():
         
         
         else:
-            #VIIKONLOPPU TAI EI RUOKAILUA
+            #Weekend or no meals
             print("ei ruokailua")
     for data in datas3:
         data = data.text
-        #JOS TÄMÄ PÄIVÄMÄÄRÄ LÖYTYY RUOKALISTALTA, ruokalista tulostuu slackkiin
+        #If today's date is found on the menu, the menu will be printed to Slack
         if aika() in data:
         
             pattern2 = data
@@ -155,7 +155,7 @@ def ruokanaTänään():
             
         
         else:
-            #VIIKONLOPPU TAI EI RUOKAILUA
+            #Weekend or no meals
             print("ei ruokailua")
     global timestamp1
     answer1=client.chat_postMessage(channel='#lunch-bot', text="Kukaan ei ole äänestänyt vielä")

@@ -40,13 +40,15 @@ voter_ids2 = []
 voter_ids3 = []
 voter_ids4 = []
 voter_ids5 = []
+voter_ids6 = []
 vote_count1= []
 vote_count2= []
 vote_count3= []
 vote_count4= []
 vote_count5= []
+vote_count6= []
 
-all_restaurants = ['Cafe Hullu','Pancho Villa','Wolkoff', 'Wilhelmiina']
+all_restaurants = ['Cafe Hullu','Pancho Villa','Wolkoff', 'Wilhelmiina','Kehruuhuone']
 
 response = app.client.conversations_list()
 channel_name = 'lunch-bot'  # Replace with your channel name
@@ -66,6 +68,7 @@ menu2 = find_ruoka2()
 menu3= find_ruoka3()
 menu4 = find_ruoka4()
 menu5 = find_ruoka5()
+menu6 = find_ruoka6()
 
 
 
@@ -75,7 +78,7 @@ def ruokanaTänään():
     
     for ruokana in menu1:
         ruokana = ruokana.text
-        #JOS TÄMÄ PÄIVÄMÄÄRÄ LÖYTYY RUOKALISTALTA, ruokalista tulostuu slackkiin
+        #If today's date is found on the menu, the menu will be printed to Slack
         if aika() in ruokana:
             
             ruokana = ruokana.replace('€', ' euro ')
@@ -100,12 +103,12 @@ def ruokanaTänään():
         
         
         else:
-            #VIIKONLOPPU TAI EI RUOKAILUA
+            #Weekend or no meals
             print("ei ruokailua")
 
     for ruokana in menu2:
         ruokana = ruokana.text
-        #JOS TÄMÄ PÄIVÄMÄÄRÄ LÖYTYY RUOKALISTALTA, ruokalista tulostuu slackkiin
+        #If today's date is found on the menu, the menu will be printed to Slack
         if aika() in ruokana:
             
             ruokana = ruokana.replace('€', ' euro ')
@@ -131,11 +134,11 @@ def ruokanaTänään():
         
         
         else:
-            #VIIKONLOPPU TAI EI RUOKAILUA
+            #Weekend or no meals
             print("ei ruokailua")
     for ruokana in menu3:
         ruokana = ruokana.text
-        #JOS TÄMÄ PÄIVÄMÄÄRÄ LÖYTYY RUOKALISTALTA, ruokalista tulostuu slackkiin
+        #If today's date is found on the menu, the menu will be printed to Slack
         if aika() in ruokana:
             
             ruokana = ruokana.replace('€', ' euro ')
@@ -159,11 +162,11 @@ def ruokanaTänään():
             messages_sent = True
         
         else:
-            #VIIKONLOPPU TAI EI RUOKAILUA
+            #Weekend or no meals
             print("ei ruokailua")
     for ruokana in menu4:
         ruokana = ruokana.text
-        #JOS TÄMÄ PÄIVÄMÄÄRÄ LÖYTYY RUOKALISTALTA, ruokalista tulostuu slackkiin
+        #If today's date is found on the menu, the menu will be printed to Slack
         if aika() in ruokana:
             
             ruokana = ruokana.replace('€', ' euro ')
@@ -187,11 +190,11 @@ def ruokanaTänään():
             messages_sent = True
         
         else:
-            #VIIKONLOPPU TAI EI RUOKAILUA
+            #Weekend or no meals
             print("ei ruokailua")
     for ruokana in menu5:
         ruokana = ruokana.text
-        #JOS TÄMÄ PÄIVÄMÄÄRÄ LÖYTYY RUOKALISTALTA, ruokalista tulostuu slackkiin
+        #If today's date is found on the menu, the menu will be printed to Slack
         if aika() in ruokana:
             
             ruokana = ruokana.replace('€', ' euro ')
@@ -215,8 +218,40 @@ def ruokanaTänään():
             messages_sent = True
         
         else:
-            #VIIKONLOPPU TAI EI RUOKAILUA
+            #weekend or no meals
             print("ei ruokailua")
+    for ruokana in menu6:
+        ruokana = ruokana.text
+        #If today's date is found on the menu, the menu will be printed to Slack
+        if aika() in ruokana:
+            
+            ruokana = ruokana.replace('€', ' euro ')
+            
+            
+            res = [all_restaurants[5]]
+            result = ''.join(res)
+            print(ruokana)
+            client.chat_postMessage(channel='#lunch-bot', text="",
+            blocks=[
+            {
+                "type": "section",
+                "text": {"type": "mrkdwn", "text": f'{result}:\n\n{ruokana}!'},
+                "accessory": {
+                    "type": "button",
+                    "text": {"type": "plain_text", "text": "Vote"},
+                    "action_id": "vote_click6"
+                },
+                
+            }
+            ])
+            messages_sent = True
+        
+        
+        else:
+            #Weekend or no meals
+            print("ei ruokailua")       
+    
+    
     if messages_sent == True:
         global VoteMessageTs
         vastaus1=client.chat_postMessage(channel='#lunch-bot', text="Kukaan ei ole äänestänyt vielä")
