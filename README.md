@@ -5,11 +5,11 @@ LounasBotti
 This Python project focuses on scraping restaurant menus in the Lappeenranta area and sharing them on a designated Slack channel. The goal is to streamline the process of choosing a restaurant among a group of people by allowing them to vote interactively.
 
 ## Key Features
-1. **Web Scraping:** The project utilizes web scraping techniques to extract relevant information from restaurant menus' HTML pages.
-2. **Data Parsing:** Once the HTML is scraped, the data is parsed to extract the desired information, such as menu items, prices, and other relevant details.
+1. **Web Scraping:** The project utilizes web scraping to extract relevant information from restaurant menus' HTML pages.
+2. **Data Parsing:** Once the HTML is scraped, the data is parsed to extract the menu.
 3. **Slack Integration:** The processed data is seamlessly sent to a specified Slack channel using the Slack API, ensuring real-time updates for the users.
 4. **Interactive Voting:** Recipients on the Slack channel can engage in interactive voting. The project incorporates buttons to facilitate easy voting for the restaurant of their choice.
-5. **Live Updates:** The voting results are dynamically updated in real-time, providing instant feedback to users as they cast their votes.
+5. **Voting Updates:** The voting results are dynamically updated in real-time, providing instant feedback to users as they cast their votes.
 
 ## Install
 Tested Python versions: 3.12.1, 
