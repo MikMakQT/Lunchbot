@@ -78,7 +78,7 @@ Täytä (Mikael M)
 
 Täytä
 
-## Running code locally Konsta
+## Running code locally
 
 Täytä
 
