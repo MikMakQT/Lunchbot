@@ -20,10 +20,10 @@ https://www.python.org/downloads/
 Dependencies are installed using requirements.txt:\
 pip install -r requirements.txt
 
-## Requirements (requirements.txt)
+## Requirements (requirements.txt) Oskari
 täytä
 
-## Installing an App to your own Workspace
+## Installing an App to your own Workspace 
 täytä
 
 ## Tokens (.env)
