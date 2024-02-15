@@ -52,11 +52,11 @@ def find_ruoka4():
 
 def find_ruoka5():
     #HTML TEXT OF THE MENU PAGE
-    html_text = requests.get('https://www.ruokapaikka.fi/#id=2013346&n=Cafe%20Miku').text
+    html_text = requests.get('https://www.lounaat.info/lounas/lounaskahvila-elsi/lappeenranta').text
     #Checking HTML page
     soup = BeautifulSoup(html_text,'lxml')
     #FIND ALL LI, MENU-LIST_ITEM, because that's where the menu content is found
-    datas5 = soup.find_all('li', class_="menu-list__item")
+    datas5 = soup.find_all('div', class_="item")
     return datas5
 
 def find_ruoka6():
