@@ -13,7 +13,7 @@ This Python project focuses on scraping restaurant menus in the Lappeenranta are
 
 ## Install
 Before running the project, ensure you have the following prerequisites installed:
-Tested Python versions: 3.12.1, 
+Tested Python versions: 3.12.1, \
 Python Download:\
 https://www.python.org/downloads/
 
