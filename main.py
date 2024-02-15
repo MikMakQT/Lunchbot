@@ -271,7 +271,7 @@ def ruokanaTänään():
     
     if messages_sent == True:
         global VoteMessageTs
-        vastaus1=client.chat_postMessage(channel='#lunch-bot', text="Kukaan ei ole äänestänyt vielä")
+        vastaus1=client.chat_postMessage(channel='#lunch-bot', text="*Kukaan ei ole äänestänyt vielä*")
         VoteMessageTs = vastaus1['ts']
     
 
