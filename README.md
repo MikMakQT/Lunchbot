@@ -43,7 +43,7 @@ example. datas = soup.find_all('div', class_="item")
 
 ### Principle
 
-## Requirements
+## Requirements (requirements.txt)
 
 ### Principle
 
