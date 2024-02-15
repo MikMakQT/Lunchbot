@@ -34,16 +34,22 @@ Scroll down when you see App-Level Tokens and press Generate Token and Scopes.
 Give the token a name and give scope connections:write.
 After that press the token and copy the token. It should look like this: xapp-
 
-Then go to OAuth & Permissions using the left menu:
+After you created App, go to Basic Information tab using the left menu.
+
+Look for => App-Level Tokens.\
+Press => Token and Scopes and give a name for the app.\
+Press => Add Scope and give permission connections:write and press Generate.\
+Press your App => Copy App level token.
+
+KESKENThen go to OAuth & Permissions tab using the left menu:
 
 Look for => OAuth Tokens for Your Workspace.\
 Copy your => Bot User OAuth Token.
 
 Inside code editor head over .env file\
-Paste your OAuth Token\
-example. SLACK_TOKEN = xoxb-**********
-Paste your 
-example. SLACK_APP_TOKEN = xapp-*********
+Paste your OAuth Token and App level token. It should look like this:\ 
+SLACK_TOKEN = xoxb-**********
+SLACK_APP_TOKEN = xapp-*********
 
 ## Scraping (ruokapaikat.py)
 
