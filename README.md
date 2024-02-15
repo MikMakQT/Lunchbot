@@ -23,7 +23,7 @@ pip install -r requirements.txt
 ## Requirements (requirements.txt) Oskari
 täytä
 
-## Installing an App to your own Workspace 
+## Installing an App to your own Workspace Oskari
 täytä
 
 ## Tokens (.env)
