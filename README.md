@@ -13,7 +13,7 @@ This Python project focuses on scraping restaurant menus in the Lappeenranta are
 
 ## Install
 Before running the project, ensure you have the following prerequisites installed:
-Tested Python versions: 3.12.1, \
+Tested Python versions: 3.12.1,  \
 Python Download:\
 https://www.python.org/downloads/
 
@@ -59,7 +59,7 @@ SLACK_APP_TOKEN = xapp-*********
 The script uses the URL of the website as shown in the first example below to scrape the website. Then the script searches the classes and elements using given parameters.
 The parameters given differ page to page. Therefore parameters that work for "lounaat.info" might not work for another page. 
 
-### Changing the URL
+### Changing the URL tarvitsee täydennettävää
 Put websites URL you wanna scrape the information inside the ''\
 example. html_text = requests.get('https://www.lounaat.info/lounas/pancho-villa/lappeenranta').text
 
@@ -78,7 +78,7 @@ Täytä
 
 Täytä
 
-## Running code locally
+## Running code locally Konsta
 
 Täytä
 
