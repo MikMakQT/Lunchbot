@@ -43,6 +43,10 @@ example. datas = soup.find_all('div', class_="item")
 
 ### Principle
 
+## Requirements
+
+### Principle
+
 ## Errors
 #1 C++ Error
 If you get error like this when installing packages: 
