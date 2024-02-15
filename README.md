@@ -49,7 +49,8 @@ Copy your => Bot User OAuth Token.
 Inside code editor head over .env file\
 Paste your OAuth Token and App level token. It should look like this:
 
-SLACK_TOKEN = xoxb-**********\
+SLACK_TOKEN = xoxb-**********
+
 SLACK_APP_TOKEN = xapp-*********
 
 ## Scraping (ruokapaikat.py)
