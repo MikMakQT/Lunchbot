@@ -19,7 +19,7 @@ from slack_sdk.webhook import WebhookClient
 from slack_bolt import App
 from slack_bolt.adapter.socket_mode import SocketModeHandler
 
-import schedule
+
 import time
 
 env_path = Path('.') /'.env'
@@ -48,7 +48,7 @@ vote_count4= []
 vote_count5= []
 vote_count6= []
 
-all_restaurants = ['Cafe Hullu','Pancho Villa','Wolkoff', 'Wilhelmiina','Kehruuhuone']
+all_restaurants = ['Cafe Hullu','Pancho Villa','Wolkoff', 'Wilhelmiina','Elsi','Kehruuhuone']
 
 response = app.client.conversations_list()
 channel_name = 'lunch-bot'  # Replace with your channel name
@@ -65,7 +65,7 @@ else:
 
 menu1 = find_ruoka1()
 menu2 = find_ruoka2()
-menu3= find_ruoka3()
+menu3 = find_ruoka3()
 menu4 = find_ruoka4()
 menu5 = find_ruoka5()
 menu6 = find_ruoka6()
@@ -76,6 +76,23 @@ menu6 = find_ruoka6()
 def ruokanaTänään():
     messages_sent = False
     
+
+    client.chat_postMessage(channel='#lunch-bot', text="",
+            blocks=[
+            {
+			"type": "header",
+			"text": {
+				"type": "plain_text",
+				"text": ":newspaper:  Päivän Lounaslista  :newspaper:"
+			},
+                
+            }
+            ])
+
+
+
+
+
     for ruokana in menu1:
         ruokana = ruokana.text
         #If today's date is found on the menu, the menu will be printed to Slack
@@ -90,7 +107,7 @@ def ruokanaTänään():
             blocks=[
             {
                 "type": "section",
-                "text": {"type": "mrkdwn", "text": f'{result}:\n\n{ruokana}!'},
+                "text": {"type": "mrkdwn", "text": f'*{result}*:\n\n{ruokana}!'},
                 "accessory": {
                     "type": "button",
                     "text": {"type": "plain_text", "text": "Vote"},
@@ -121,7 +138,7 @@ def ruokanaTänään():
             blocks=[
             {
                 "type": "section",
-                "text": {"type": "mrkdwn", "text": f'{result}:\n\n{ruokana}!'},
+                "text": {"type": "mrkdwn", "text": f'*{result}*:\n\n{ruokana}!'},
                 "accessory": {
                     "type": "button",
                     "text": {"type": "plain_text", "text": "Vote"},
@@ -150,7 +167,7 @@ def ruokanaTänään():
             blocks=[
             {
                 "type": "section",
-                "text": {"type": "mrkdwn", "text": f'{result}:\n{ruokana}!'},
+                "text": {"type": "mrkdwn", "text": f'*{result}*:\n{ruokana}!'},
                 "accessory": {
                     "type": "button",
                     "text": {"type": "plain_text", "text": "Vote"},
@@ -178,7 +195,7 @@ def ruokanaTänään():
             blocks=[
             {
                 "type": "section",
-                "text": {"type": "mrkdwn", "text": f'{result}:\n{ruokana}!'},
+                "text": {"type": "mrkdwn", "text": f'*{result}*:\n\n{ruokana}!'},
                 "accessory": {
                     "type": "button",
                     "text": {"type": "plain_text", "text": "Vote"},
@@ -206,7 +223,7 @@ def ruokanaTänään():
             blocks=[
             {
                 "type": "section",
-                "text": {"type": "mrkdwn", "text": f'{result}:\n{ruokana}!'},
+                "text": {"type": "mrkdwn", "text": f'*{result}*:\n\n{ruokana}!'},
                 "accessory": {
                     "type": "button",
                     "text": {"type": "plain_text", "text": "Vote"},
@@ -235,7 +252,7 @@ def ruokanaTänään():
             blocks=[
             {
                 "type": "section",
-                "text": {"type": "mrkdwn", "text": f'{result}:\n\n{ruokana}!'},
+                "text": {"type": "mrkdwn", "text": f'*{result}*:\n\n{ruokana}!'},
                 "accessory": {
                     "type": "button",
                     "text": {"type": "plain_text", "text": "Vote"},
@@ -271,11 +288,15 @@ def äänestys():
     global vote_count2
     global vote_count3
     global vote_count4
+    global vote_count5
+    global vote_count6
     global VoteMessageTs
     vote_count1 = len(voter_ids1)
     vote_count2 = len(voter_ids2)
     vote_count3 = len(voter_ids3)
     vote_count4 = len(voter_ids4)
+    vote_count5 = len(voter_ids5)
+    vote_count6 = len(voter_ids6)
 
     if VoteMessageTs:
             
@@ -288,6 +309,10 @@ def äänestys():
             res3 = ''.join(res3)
             res4 = [all_restaurants[3]]
             res4 = ''.join(res4)
+            res5 = [all_restaurants[4]]
+            res5 = ''.join(res5)
+            res6 = [all_restaurants[5]]
+            res6 = ''.join(res6)
  
 
             # Create a list of tuples containing vote counts, restaurant names, and indices
@@ -296,13 +321,15 @@ def äänestys():
             (vote_count2, res2, 2),
             (vote_count3, res3, 3),
             (vote_count4, res4, 4),
+            (vote_count5, res5, 5),
+            (vote_count6, res6, 6)
             ]
 
             # Sort the list based on vote counts in descending order
             sorted_restaurants = sorted(restaurant_data, key=lambda x: x[0], reverse=True)
 
             # Create the result message
-            result_message = "Äänestystulos:\n"
+            result_message = "*Äänestystulos*:\n\n"
 
             # Add restaurants with vote counts to the result message
             for i, (votes, restaurant, index) in enumerate(sorted_restaurants, start=1):
@@ -368,6 +395,30 @@ def action_button_click3(body, ack):
         voter_ids4.remove(user_id)
     else:
         voter_ids4.append(user_id)
+        
+    äänestys()
+
+@app.action("vote_click5")
+def action_button_click3(body, ack):
+    
+    ack()
+    user_id = body['user']['id']
+    if user_id in voter_ids5:
+        voter_ids5.remove(user_id)
+    else:
+        voter_ids5.append(user_id)
+        
+    äänestys()
+
+@app.action("vote_click6")
+def action_button_click3(body, ack):
+    
+    ack()
+    user_id = body['user']['id']
+    if user_id in voter_ids6:
+        voter_ids6.remove(user_id)
+    else:
+        voter_ids6.append(user_id)
         
     äänestys()
 
