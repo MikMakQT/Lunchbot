@@ -74,7 +74,7 @@ example. datas = soup.find_all('div', class_="item")
 ### How to add more restaurants (Scaling)
 Täytä (Mikael M)
 
-## Time (aika.py)
+## Time (aika.py) Jussi
 
 Täytä
 
