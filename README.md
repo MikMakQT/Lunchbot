@@ -2,7 +2,7 @@
 LounasBotti
 
 ## Introduction
-This Python project focuses on scraping restaurant menus in the Lappeenranta area and sharing them on a designated Slack channel. The goal is to streamline the process of choosing a restaurant among a group of people by allowing them to vote interactively.
+This Python project focuses on scraping restaurant menus in the Lappeenranta area and sharing them on a designated Slack channel. Users can vote and voting results will be updated automatically.
 
 ## Key Features
 1. **Web Scraping:** The project utilizes web scraping to extract relevant information from restaurant menus' HTML pages.
