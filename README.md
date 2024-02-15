@@ -12,6 +12,7 @@ This Python project focuses on scraping restaurant menus in the Lappeenranta are
 5. **Voting Updates:** The voting results are dynamically updated in real-time, providing instant feedback to users as they cast their votes.
 
 ## Install
+Before running the project, ensure you have the following prerequisites installed:
 Tested Python versions: 3.12.1, 
 Python Download:\
 https://www.python.org/downloads/
