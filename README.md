@@ -7,15 +7,28 @@ Processed data is then send to desired Slack channel using Slack API.\
 Recipients can vote interactively which restaurant to go using buttons
 
 ## Install
+Tested Python versions: 3.12.1, 
 Python Download:\
 https://www.python.org/downloads/
 
 Dependencies are installed using requirements.txt:\
 pip install -r requirements.txt
 
-## File modifications (.env)
-Go to https://api.slack.com/apps and create App.\
-After you created App, you should be in the App settings, go to OAuth & Permissions using the left menu:
+## Requirements (requirements.txt)
+täytä
+
+## Installing an App to your own Workspace
+täytä
+
+## Tokens (.env)
+For the App to work in your workspace you need create App and copy your tokens to .env file.
+First go to https://api.slack.com/apps and create App.\
+After you created App, you should be in the App settings, go to Basic Information tab in the left menu.
+Scroll down when you see App-Level Tokens and press Generate Token and Scopes. 
+Give the token a name and give scope connections:write.
+After that press the token and copy the token. It should look like this: xapp-
+
+Then go to OAuth & Permissions using the left menu:
 
 Look for => OAuth Tokens for Your Workspace.\
 Copy your => Bot User OAuth Token.
@@ -23,6 +36,8 @@ Copy your => Bot User OAuth Token.
 Inside code editor head over .env file\
 Paste your OAuth Token\
 example. SLACK_TOKEN = xoxb-**********
+Paste your 
+example. SLACK_APP_TOKEN = xapp-*********
 
 ## Scraping (ruokapaikat.py)
 
@@ -43,7 +58,7 @@ example. datas = soup.find_all('div', class_="item")
 
 ### Principle
 
-## Requirements (requirements.txt)
+
 
 ### Principle
 
