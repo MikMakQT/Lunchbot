@@ -63,8 +63,8 @@ The parameters given differ page to page. Therefore parameters that work for "lo
 Put websites URL you wanna scrape the information inside the ''\
 example. html_text = requests.get('https://www.lounaat.info/lounas/pancho-villa/lappeenranta').text
 
-## Removing the Restaurant
-Täytä
+### Removing the Restaurant
+Täytä (Mikael M)
 
 ### Changing the parameters for the searched elements
 Websites are constructed different ways, using different class names and elements.\
@@ -72,7 +72,7 @@ You can modify searched elements in method find_all()\
 example. datas = soup.find_all('div', class_="item")
 
 ### How to add more restaurants (Scaling)
-Täytä
+Täytä (Mikael M)
 
 ## Time (aika.py)
 
