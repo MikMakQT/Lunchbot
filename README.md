@@ -1,11 +1,9 @@
+![sample1](https://github.com/MikMakQT/Lunchbot/assets/122342899/84da1718-d25f-43d2-810c-4c5199cb9ede)
 # Lunchbot
 LounasBotti
 
 ## Introduction
 This Python project focuses on scraping restaurant menus in the Lappeenranta area and sharing them on a designated Slack channel. Users can vote and voting results will be updated automatically.
-
-![sample1](https://github.com/MikMakQT/Lunchbot/assets/122342899/84da1718-d25f-43d2-810c-4c5199cb9ede)
-
 
 ## Key Features
 1. **Web Scraping:** The project utilizes web scraping to extract relevant information from restaurant menus' HTML pages.
