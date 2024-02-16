@@ -35,7 +35,7 @@ After creating App you should to go to your App settings and find Basic Informat
 Look for => App-Level Tokens.\
 Press => Token and Scopes and give a name for the app.\
 Press => Add Scope and give permission connections:write and press Generate.\
-Press your App => Copy App level token, which should start like this: xapp-
+Press your App => Copy App level token, which should start like this: xapp-\
 Go to your .env file => Paste your token.
 
 Then go to OAuth & Permissions tab using the left menu:
