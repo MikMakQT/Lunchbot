@@ -21,7 +21,7 @@ Dependencies are installed using requirements.txt:\
 pip install -r requirements.txt
 
 ## Requirements (requirements.txt) Oskari
-täytä
+selitä mitä tää requirements tekee (ei tarvii olla mikää tosi pitkä joku pari virkettä)
 
 ## Installing an App to your own Workspace Oskari
 kirjota step by step ohje miten se app lisätään sinne slackkiin. kannattaa ekaks luoda joku app (ei tää lounaslistabot vaa joku ihan uus) ja sit lisäät sinne slackkiin sen.
