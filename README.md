@@ -41,7 +41,7 @@ Go to your .env file => Paste your token.
 Then go to OAuth & Permissions tab using the left menu:
 
 Look for => OAuth Tokens for Your Workspace.\
-Copy your => Bot User OAuth Token.
+Copy your => Bot User OAuth Token.\
 Go to your .env file => Paste your token.
 
 Inside your .env file should look like this:
