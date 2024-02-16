@@ -6,7 +6,7 @@ This Python project focuses on scraping restaurant menus in the Lappeenranta are
 ## Key Features
 1. **Web Scraping:** The project utilizes web scraping to extract relevant information from restaurant menus' HTML pages.
 2. **Data Parsing:** Once the HTML is scraped, the data is parsed to extract the lunch menus.
-3. **Slack Integration:** The processed data is sent to a specified Slack channel using the Slack API and uses to SocketModeHandler for handling voting system.
+3. **Slack Integration:** The processed data is sent to a specified Slack channel using the Slack API and uses to SocketModeHandler for handling voting interaction.
 4. **Interactive Voting:** Recipients on the Slack channel can use buttons to easily vote for the restaurant of their choice.
 5. **Voting Updates:** The voting results are automatically updated in real-time, providing instant results for the user.
 
