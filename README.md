@@ -29,6 +29,7 @@ kirjota step by step ohje miten se app lisätään sinne slackkiin. kannattaa ek
 ## Tokens (.env)
 For the App to work in your workspace you need create App and copy your tokens to .env file.
 First go to https://api.slack.com/apps and create App.\
+
 After you created App, you should be in the App settings, go to Basic Information tab in the left menu.
 Scroll down when you see App-Level Tokens and press Generate Token and Scopes. 
 Give the token a name and give scope connections:write.
