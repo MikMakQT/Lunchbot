@@ -84,7 +84,8 @@ Täytä
 
 ## Errors
 #1 C++ Error
-If you get error like this when installing requirements.txt: 
+If you get error like this when installing requirements.txt:\
+
 error: Microsoft Visual C++ 14.0 or greater is required. Get it with "Microsoft C++ Build Tools": https://visualstudio.microsoft.com/visual-cpp-build-tools/
       [end of output]
 
