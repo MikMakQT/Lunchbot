@@ -1,18 +1,6 @@
-
 from bs4 import BeautifulSoup 
-
-
 from pathlib import Path
-
-
-
 import requests
-
-
-
-
-
-
 
 def find_ruoka1():
     #HTML TEXT OF THE MENU PAGE
