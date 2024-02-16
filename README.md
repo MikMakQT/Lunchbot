@@ -25,19 +25,17 @@ pip install -r requirements.txt
 ## Requirements (requirements.txt) Oskari
 selitä mitä tää requirements tekee (ei tarvii olla mikää tosi pitkä joku pari virkettä)
 
-## Installing an App to your own Workspace Oskari
+## Creating and Installing an App to your own Workspace Oskari
 kirjota step by step ohje miten se app lisätään sinne slackkiin. kannattaa ekaks luoda joku app (ei tää lounaslistabot vaa joku ihan uus) ja sit lisäät sinne slackkiin sen.
 
 ## Tokens (.env)
-For the App to work in your workspace you need create App and copy your tokens to .env file.
-First go to https://api.slack.com/apps and create App.
 
 After you created App, you should be in the App settings, go to Basic Information tab in the left menu.
 Scroll down when you see App-Level Tokens and press Generate Token and Scopes. 
 Give the token a name and give scope connections:write.
-After that press the token and copy the token. It should look like this: xapp-
+After that press the token and copy the token. Token should start like this: xapp-
 
-After you created App, go to Basic Information tab using the left menu.
+Now go to Basic Information tab using the left menu.
 
 Look for => App-Level Tokens.\
 Press => Token and Scopes and give a name for the app.\
