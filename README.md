@@ -93,6 +93,9 @@ error: Microsoft Visual C++ 14.0 or greater is required. Get it with "Microsoft 
   ERROR: Failed building wheel for multidict
 Failed to build multidict
 ERROR: Could not build wheels for multidict, which is required to install pyproject.toml-based projects
+
 To fix this you can use pip install --upgrade setuptools in terminal
-If that doesnt work you need to install C++ downloading it from Microsoft website https://learn.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022
-or using Visual Studio installer and select C++ package to install
+
+If that doesnt work you need to install C++ Build tools downloading it from Microsoft website https://learn.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022
+
+You can also use Visual Studio installer and select C++ package to install and it will fix the error too.
