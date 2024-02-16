@@ -4,22 +4,13 @@ import slack_sdk
 import os
 from pathlib import Path
 from dotenv import load_dotenv
-
-from fpdf import FPDF
 import requests 
-
 from aika import *
 from ruokapaikat import *
 from blockkit import Button, Context, Divider, Message, Section
-
-import json
-
 from slack_sdk.webhook import WebhookClient
-
 from slack_bolt import App
 from slack_bolt.adapter.socket_mode import SocketModeHandler
-
-
 import time
 
 env_path = Path('.') /'.env'
