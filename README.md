@@ -24,7 +24,7 @@ pip install -r requirements.txt
 täytä
 
 ## Installing an App to your own Workspace Oskari
-täytä
+kirjota step by step ohje miten se app lisätään sinne slackkiin. kannattaa ekaks luoda joku app (ei tää lounaslistabot vaa joku ihan uus) ja sit lisäät sinne slackkiin sen.
 
 ## Tokens (.env)
 For the App to work in your workspace you need create App and copy your tokens to .env file.
