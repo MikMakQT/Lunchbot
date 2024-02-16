@@ -28,7 +28,9 @@ selitä mitä tää requirements tekee (ei tarvii olla mikää tosi pitkä joku 
 ## Creating and Installing an App to your own Workspace Oskari
 kirjota step by step ohje miten se app lisätään sinne slackkiin. kannattaa ekaks luoda joku app (ei tää lounaslistabot vaa joku ihan uus) ja sit lisäät sinne slackkiin sen.
 
-## Tokens (.env)
+## App settings
+
+### Tokens (.env)
 
 After creating App you should to go to your App settings and find Basic Information tab using the left menu:
 
@@ -49,6 +51,14 @@ Inside your .env file should look like this:
 SLACK_APP_TOKEN = xapp-*************
 
 SLACK_TOKEN = xoxb-**********
+
+### Socket Mode
+Turning on Socket Mode will route your app’s interactions and events over a WebSockets connection instead sending these payloads to Request URLs, which are public HTTP endpoints.
+
+This setting is intended for internal apps that are in development or need to be deployed behind a firewall. It is not intended for widely distributed apps. Please set up Request URLs for your app before submitting to the App Directory.
+
+Go to Socket Mode tab using the left menu:
+Press => Enable Socket Mode
 
 ## Scraping (ruokapaikat.py)
 
