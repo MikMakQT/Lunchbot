@@ -55,8 +55,6 @@ SLACK_TOKEN = xoxb-**********
 ### Socket Mode
 Turning on Socket Mode will route your app’s interactions and events over a WebSockets connection instead sending these payloads to Request URLs, which are public HTTP endpoints.
 
-This setting is intended for internal apps that are in development or need to be deployed behind a firewall. It is not intended for widely distributed apps. Please set up Request URLs for your app before submitting to the App Directory.
-
 Go to Socket Mode tab using the left menu:
 Press => Enable Socket Mode
 
