@@ -69,7 +69,8 @@ example. html_text = requests.get('https://www.lounaat.info/lounas/pancho-villa/
 
 ### Removing the Restaurant
 To remove a restaurant from the message frame you need to remove the following:
-From main.py all actions which correspond to the restaurant in ruokapaikat.py
+From main.py all actions which correspond to the restaurant in ruokapaikat.py.
+
 And finally from ruokapaikat.py remove the find_ruoka# which is now no longer tied to anything in main.py.
 
 ### Changing the parameters for the searched elements
