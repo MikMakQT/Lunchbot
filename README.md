@@ -76,26 +76,14 @@ To successfully remove a restaurant from the script you need to remove:
 
 FROM MAIN.PY:
 
-voter_ids#
-
-vote_count#
-
 Restaurant name from "all_restaurants"
 
 menu# = find_ruoka#
 
 for loop which corresponds to the restaurant (i.e. ruokana in menu1)
 
-global vote_count#
-
-vote_count# = len(voter_ids#)
-
 res# = [all_restaurants[#]]
 res# = ''.join(res#)
-
-(vote_count#, res#, #),
-
-def action_button_click#(body, ack):
 
 FROM RUOKAPAIKAT.PY:
 
