@@ -27,7 +27,17 @@ Dependencies are installed using requirements.txt:
 pip install -r requirements.txt
 
 ## Creating and Installing an App to your own Slack Workspace Oskari
-kirjota step by step ohje miten se app lisätään sinne slackkiin. kannattaa ekaks luoda joku app (ei tää lounaslistabot vaa joku ihan uus) ja sit lisäät sinne slackkiin sen.
+1. From the Slack menu, select "Add apps" => "App directory".
+2. Choose "build" => "your apps".
+3. Select "Create new app" => "From scratch".
+4. Enter the app's name.
+5. Choose the workspace where you want to create the app => "Create app".
+6. Navigate to "Basic information" in the menu => "Install your app" => "Permission scope".
+7. Add the following permissions:
+- chat:write.customize
+- chat:write => "Add an OAuth Scope" => "Install to workspace" => "Allow".
+8. Go back to the Slack homepage => right-click on the app you created => "Add this app to channel".
+9. Select the channel where you want to add the app => "Add".
 
 ## App settings
 
