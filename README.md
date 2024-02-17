@@ -74,7 +74,13 @@ To successfully remove a restaurant from the script you need to remove:
 
 from main.py:
 voter_ids#
+
 vote_count#
+
+Restaurant name from "all_restaurants"
+
+menu# = find_ruoka#
+
 
 ### Changing the parameters for the searched elements
 Websites are constructed different ways, using different class names and elements.\
