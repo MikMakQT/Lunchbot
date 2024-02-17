@@ -116,7 +116,15 @@ The time functions ultimately provide the daily lunch menus of restaurants to th
 
 ## Running code locally Jussi
 
-Täytä
+To run these functions locally, you would need to have Python and the BeautifulSoup library installed on your computer. 
+You would then copy and paste the code into a Python script and run the script in a Python environment. 
+The functions will execute and print out the menu items for each restaurant as a list of Python objects.
+1. Clone the repository to your local machine using Git. Navigate to the directory where you want the project to be stored and run. Remember to install dependencies!
+2. Set up a Virtual Environment (optional but recommended). 
+You can create a virtual environment using venv. Open a terminal within VSCode (Terminal > New Terminal) and navigate to your project directory.
+3. Monitor the output: As your script runs, you should see output in the terminal indicating the progress of your scraping, voting, or any other operations your script performs.
+
+
 
 ## Errors
 ### requirements.txt install error
