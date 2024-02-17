@@ -125,5 +125,3 @@ You can also use Visual Studio installer and select C++ package to install and i
 
 ## Avatar
 ![T0615Q9B316-U0603QHDF7Z-2acdd59bc471-512](https://github.com/MikMakQT/Lunchbot/assets/122342899/61bc8002-009c-495f-afe2-9ce4f77ad993)
-
-![T0615Q9B316-U0603QHDF7Z-2acdd59bc471-512](https://github.com/MikMakQT/Lunchbot/assets/122342899/06429149-48de-45f5-83e4-c88816aef468)
