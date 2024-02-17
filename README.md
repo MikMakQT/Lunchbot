@@ -95,7 +95,9 @@ res# = ''.join(res#)
 
 def action_button_click#(body, ack):
 
+FROM RUOKAPAIKAT.PY:
 
+def find_ruoka#():
 
 ### Changing the parameters for the searched elements
 Websites are constructed different ways, using different class names and elements.\
