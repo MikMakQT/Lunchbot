@@ -9,6 +9,6 @@ def aika():
     datetime_day = today.day
     #day + month
     day_today = (f'{datetime_day}.{datetime_month}')
-    #MUUTETAAN STRING MUOTOON
+    #Convert to string type
     
     return day_today
