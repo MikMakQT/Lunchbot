@@ -66,16 +66,24 @@ menu6 = find_ruoka6()
     
 def ruokanaTänään():
     messages_sent = False
-    
 
-    client.chat_postMessage(channel='#lunch-bot', text="",
-            blocks=[
-            {
-			"type": "header",
-			"text": {
+    # List of menus
+    menus = [menu1, menu2, menu3, menu4, menu5, menu6]
+
+    for menu in menus:
+        for ruokana in menu:
+            ruokana = ruokana.text
+
+            # If today's date is found on the menu, the menu will be printed to Slack
+            if aika() in ruokana:
+                client.chat_postMessage(channel='#lunch-bot', text="",
+                blocks=[
+                {
+			    "type": "header",
+			    "text": {
 				"type": "plain_text",
 				"text": ":newspaper:  Päivän Lounaslista  :newspaper:"
-			},
+			    },
                 
             }
             ])
