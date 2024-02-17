@@ -73,6 +73,7 @@ example. html_text = requests.get('https://www.lounaat.info/lounas/pancho-villa/
 To successfully remove a restaurant from the script you need to remove:
 
 from main.py:
+
 voter_ids#
 
 vote_count#
@@ -80,6 +81,8 @@ vote_count#
 Restaurant name from "all_restaurants"
 
 menu# = find_ruoka#
+
+for loop which corresponds to the restaurant (i.e. ruokana in menu1)
 
 
 ### Changing the parameters for the searched elements
