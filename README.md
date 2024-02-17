@@ -11,7 +11,7 @@ This Python project focuses on scraping restaurant menus in the Lappeenranta are
 5. **Voting Updates:** The voting results are automatically updated in real-time, providing instant results for the user.
 
 ## Install
-Tested Python versions: 3.10.11, 3.12.1,
+Tested Python versions: 3.10.11, 3.12.1, 3.11.7
 
 Before running the project, ensure you have python installed and prerequisites installed:
 
@@ -68,7 +68,9 @@ Put websites URL you wanna scrape the information inside the ''\
 example. html_text = requests.get('https://www.lounaat.info/lounas/pancho-villa/lappeenranta').text
 
 ### Removing the Restaurant
-Täytä (Mikael M)
+To remove a restaurant from the message frame you need to remove the following:
+From main.py all actions which correspond to the restaurant in ruokapaikat.py
+And finally from ruokapaikat.py remove the find_ruoka# which is now no longer tied to anything in main.py.
 
 ### Changing the parameters for the searched elements
 Websites are constructed different ways, using different class names and elements.\
