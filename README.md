@@ -18,12 +18,13 @@ Before running the project, ensure you have python installed and prerequisites i
 Python Download:
 https://www.python.org/downloads/
 
-### Requirements (requirements.txt) Oskari
+### Requirements (requirements.txt)
+
+The Requirements file contains all the necessary libraries that the code needs to run.
+
 Dependencies are installed using requirements.txt:
 
 pip install -r requirements.txt
-
-The Requirements file contains all the necessary libraries that the code needs to run.
 
 ## Creating and Installing an App to your own Slack Workspace Oskari
 kirjota step by step ohje miten se app lisätään sinne slackkiin. kannattaa ekaks luoda joku app (ei tää lounaslistabot vaa joku ihan uus) ja sit lisäät sinne slackkiin sen.
