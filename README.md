@@ -26,7 +26,7 @@ Dependencies are installed using requirements.txt:
 
 pip install -r requirements.txt
 
-## Creating and Installing an App to your own Slack Workspace Oskari
+## Creating and Installing an App to your own Slack Workspace
 1. From the Slack menu, select "Add apps" => "App directory".
 2. Choose "build" => "your apps".
 3. Select "Create new app" => "From scratch".
