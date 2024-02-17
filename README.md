@@ -24,7 +24,7 @@ pip install -r requirements.txt
 ## Requirements (requirements.txt) Oskari
 selitä mitä tää requirements tekee (ei tarvii olla mikää tosi pitkä joku pari virkettä)
 
-## Creating and Installing an App to your own Workspace Oskari
+## Creating and Installing an App to your own Slack Workspace Oskari
 kirjota step by step ohje miten se app lisätään sinne slackkiin. kannattaa ekaks luoda joku app (ei tää lounaslistabot vaa joku ihan uus) ja sit lisäät sinne slackkiin sen.
 
 ## App settings
