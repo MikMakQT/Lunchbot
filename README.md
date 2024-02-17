@@ -84,6 +84,13 @@ menu# = find_ruoka#
 
 for loop which corresponds to the restaurant (i.e. ruokana in menu1)
 
+global vote_count#
+
+vote_count# = len(voter_ids#)
+
+res# = [all_restaurants[#]]
+res# = ''.join(res#)
+
 
 ### Changing the parameters for the searched elements
 Websites are constructed different ways, using different class names and elements.\
