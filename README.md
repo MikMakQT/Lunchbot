@@ -72,6 +72,8 @@ example. html_text = requests.get('https://www.lounaat.info/lounas/pancho-villa/
 ### Removing the Restaurant
 To successfully remove a restaurant from the script you need to remove:
 
+( "#" corresponds to the restaurant number in ruokapaikat.py)
+
 FROM MAIN.PY:
 
 voter_ids#
