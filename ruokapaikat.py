@@ -56,4 +56,16 @@ def find_ruoka6():
     datas6 = soup.find_all('div', class_="item")
     return datas6
 
+def Vapari():
+    html_text1 = requests.get('https://www.lounaat.info/lounas/food-co-vapari/lappeenranta').text
+    soup = BeautifulSoup(html_text1, 'lxml')
+    ruuat6 = soup.find_all('div', class_ = 'item')
+    return ruuat6
+
+def Kitchen():
+    html_text = requests.get('https://www.lounaat.info/lounas/the-kitchen/lappeenranta').text
+    soup = BeautifulSoup(html_text, 'lxml')
+    ruuat9 = soup.find_all('div', class_ = 'item')
+    return ruuat9
+
 
