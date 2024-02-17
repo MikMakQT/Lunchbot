@@ -20,6 +20,7 @@ https://www.python.org/downloads/
 
 ### Requirements (requirements.txt) Oskari
 Dependencies are installed using requirements.txt:
+
 pip install -r requirements.txt
 
 selitä mitä tää requirements tekee (ei tarvii olla mikää tosi pitkä joku pari virkettä)
