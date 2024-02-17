@@ -105,3 +105,37 @@ To fix this you can use pip install --upgrade setuptools in terminal
 If that doesnt work you need to install C++ Build tools downloading it from Microsoft website https://learn.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022
 
 You can also use Visual Studio installer and select C++ package to install and it will fix the error too.
+
+##Installing to workspace
+To install the specified packages into your Visual Studio Code workspace, you'll need to create a requirements.txt file with the listed package names and versions. Here's how you can do it:
+
+Open Visual Studio Code.
+Create a new file named requirements.txt in the root directory of your project.
+Copy and paste the content into the requirements.txt file
+
+Save the requirements.txt file.
+Open the terminal in Visual Studio Code.
+Run the following command to install the packages listed in requirements.txt:
+
+pip install -r requirements.txt
+
+This command will install all the packages and their specified versions listed in the requirements.txt file into your Python environment associated with your Visual Studio Code workspace. Make sure you have Python and pip installed and configured correctly.
+
+##Explanation how to install to workspace
+The requirements.txt file is a commonly used convention in Python projects to specify the dependencies required by the project. Each line in the file typically represents a separate package that the project depends on, along with the specific version requirements.
+
+Here's a breakdown of each part of the requirements.txt file:
+
+Package Name: This is the name of the Python package required by the project.
+Version Specification: This is the version of the package required by the project. It's specified using the syntax ==, followed by the version number.
+
+For example:
+aiohttp==3.8.3
+This line specifies that the project requires version 3.8.3 of the aiohttp package.
+
+When you have a requirements.txt file in your project, you can use tools like pip to automatically install all the dependencies listed in the file. This helps ensure that anyone who wants to run your project can easily set up the required environment by installing the listed packages with their specified versions.
+
+To install the packages listed in the requirements.txt file, you can use the following command:
+pip install -r requirements.txt
+
+This command tells pip to read the requirements.txt file and install all the listed packages and their specified versions into the current Python environment.
