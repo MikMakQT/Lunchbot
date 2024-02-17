@@ -109,7 +109,10 @@ Täytä (Mikael M)
 
 ## Time (aika.py) Jussi
 
-Täytä
+Defines a function called "aika" (Finnish for "time") that returns the current date as a string in the format "day.month". 
+It uses the date.today() method from the datetime module to get the current date, then extracts the day and month components. 
+These are then formatted as a string and returned. 
+The time functions ultimately provide the daily lunch menus of restaurants to the team's Slack channel at 10 am automatically, either locally or in the cloud.
 
 ## Running code locally Jussi
 
