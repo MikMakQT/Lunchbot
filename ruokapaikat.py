@@ -56,16 +56,22 @@ def find_ruoka6():
     datas6 = soup.find_all('div', class_="item")
     return datas6
 
-def Vapari():
+def find_ruoka7():
+    #HTML TEXT OF THE MENU PAGE
     html_text1 = requests.get('https://www.lounaat.info/lounas/food-co-vapari/lappeenranta').text
+    #Checking HTML page
     soup = BeautifulSoup(html_text1, 'lxml')
-    ruuat6 = soup.find_all('div', class_ = 'item')
-    return ruuat6
+    #FIND ALL LI, MENU-LIST_ITEM, because that's where the menu content is found
+    datas7 = soup.find_all('div', class_ = 'item')
+    return datas7
 
-def Kitchen():
+def find_ruoka8():
+    #HTML TEXT OF THE MENU PAGE
     html_text = requests.get('https://www.lounaat.info/lounas/the-kitchen/lappeenranta').text
+    #Checking HTML page
     soup = BeautifulSoup(html_text, 'lxml')
-    ruuat9 = soup.find_all('div', class_ = 'item')
-    return ruuat9
+    #FIND ALL LI, MENU-LIST_ITEM, because that's where the menu content is found
+    datas8 = soup.find_all('div', class_ = 'item')
+    return datas8
 
 
