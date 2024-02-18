@@ -114,7 +114,7 @@ It uses the date.today() method from the datetime module to get the current date
 These are then formatted as a string and returned. 
 The time functions ultimately provide the daily lunch menus of restaurants to the team's Slack channel at 10 am automatically, either locally or in the cloud.
 
-## Running code locally Jussi
+## Running code automatically and locally with Task Scheduler Jussi
 
 To run these functions locally, you would need to have Python and the BeautifulSoup library installed on your computer. 
 You would then copy and paste the code into a Python script and run the script in a Python environment. 
