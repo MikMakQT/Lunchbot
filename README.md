@@ -105,7 +105,31 @@ You can modify searched elements in method find_all()\
 example. datas = soup.find_all('div', class_="item")
 
 ### How to add more restaurants (Scaling)
-Täytä (Mikael M)
+
+To successfully add a restaurant to the script you need to add:
+
+( "#" corresponds to the restaurant number in ruokapaikat.py)
+
+TO MAIN.PY:
+
+voter_ids#
+
+vote_count#
+
+for loop which corresponds to the restaurant (i.e. ruokana in menu1)
+
+global vote_count#
+
+vote_count = len(voter_ids#)
+
+res# = [all_restaurants[#]]
+res# = ''.join(res#)
+
+TO RUOKAPAIKAT.PY:
+
+(note: All websites are built differently so the code you use must reflect this)
+
+def find_ruoka#():
 
 ## Time (aika.py) Jussi
 
