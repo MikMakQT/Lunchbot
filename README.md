@@ -124,6 +124,14 @@ The functions will execute and print out the menu items for each restaurant as a
 You can create a virtual environment using venv. Open a terminal within VSCode (Terminal > New Terminal) and navigate to your project directory.
 3. Monitor the output: As your script runs, you should see output in the terminal indicating the progress of your scraping, voting, or any other operations your script performs.
 
+    AND
+1. More of python script, run scheduled Python scripts
+2. Adding a new "trigger" which you can design to add time task to run LounasBot every day 10am when there is food available. After that you can change duration of script and repeating time.
+3. Remember to "Enable" trigger!!
+4. Add new action which is starting the program and adding the path to program on Windows command prompt
+5. If you want more information running the code with Task scheduler under is video about the task scheduler
+  
+https://www.youtube.com/watch?v=4n2fC97MNac&t=249s
 
 
 ## Errors
