@@ -64,7 +64,6 @@ SLACK_APP_TOKEN = xapp-*************
 SLACK_TOKEN = xoxb-**********
 
 ### Socket Mode
-Turning on Socket Mode will route your app’s interactions and events over a WebSockets connection instead sending these payloads to Request URLs, which are public HTTP endpoints.
 
 Go to Socket Mode tab using the left menu:
 Press => Enable Socket Mode
