@@ -130,14 +130,14 @@ TO RUOKAPAIKAT.PY:
 
 def find_ruoka#():
 
-## Time (aika.py) Jussi
+## Time (aika.py)
 
 Defines a function called "aika" (Finnish for "time") that returns the current date as a string in the format "day.month". 
 It uses the date.today() method from the datetime module to get the current date, then extracts the day and month components. 
 These are then formatted as a string and returned. 
 The time functions ultimately provide the daily lunch menus of restaurants to the team's Slack channel at 10 am automatically, either locally or in the cloud.
 
-## Running code automatically and locally with Task Scheduler Jussi
+## Running code automatically and locally with Task Scheduler
 
 To run these functions locally, you would need to have Python and the BeautifulSoup library installed on your computer. 
 You would then copy and paste the code into a Python script and run the script in a Python environment. 
